@@ -1,0 +1,21 @@
+﻿<section itemscope="itemscope" itemtype="http://schema.org/Event">
+    <label>Name</label>
+    <div itemprop="name"><input /></div>
+    <div itemprop="location" itemscope="itemscope" itemtype="http://schema.org/Place">
+        <label>Venue</label>
+        <div itemprop="name"><input /></div>
+        <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
+            <label>Street Address</label>
+            <div itemprop="streetAddress"><input /></div>
+            <label>City, State</label>
+            <div>
+                <span itemprop="addressLocality"><input /></span><span>, </span>
+                <span itemprop="addressRegion"><input class="input-small" /></span>
+            </div>
+            <label>Postal-Code</label>
+            <div itemprop="postalCode"><input /></div>
+        </div>
+    </div>
+    <label>Date and Time</label>
+    <div itemprop="startDate" content=""><input type="datetime-local" /></div>
+</section>

@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Textangular Editor Demo</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.5.16/textAngular.min.css'/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.5.16/textAngular-rangy.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.5.16/textAngular.min.js'></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="scripts/textAngular-sanitize.js"></script>
+    <script src="scripts/global.js"></script>
+</head>
+<body ng-app="editor" style="padding-top: 1em">
+    <div ng-controller="editorCtrl" class="container">
+        <form name="editorFrm">
+            <div class="button-group">
+                <select id="insert-item-list">
+                    <option value="-1" disabled selected>Insert Item</option>
+                    <option>Address</option>
+                    <option>Contact</option>
+                    <option>Event</option>
+                    <option>Organization</option>
+                    <option>Place</option>
+                    <option>Product</option>                  
+                </select>
+                <button class="btn btn-submit">Submit Markup</button>
+            </div>
+            <div class="form-group">
+                <text-angular name="textBox" ng-model="data" required></text-angular>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <h1 class="submitted-markup-header">Submitted Markup</h1>
+        <div id="submitted-markup"></div>
+    </div>
+    <div id="dialog-form" title="Insert Item"></div>
+</body>
+</html>

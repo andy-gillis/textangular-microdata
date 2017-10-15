@@ -1,0 +1,56 @@
+.ui-dialog label {
+    display: block;
+    padding-top: 4px;
+    margin: 0;
+    font-weight: normal;
+}
+.ui-dialog input {
+    width: 12em;
+}
+.ui-dialog input[type=datetime-local] {
+    width: auto;
+}
+.ui-dialog input.input-small {
+    width: 4em;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: 0em 1em;
+}
+.ui-dialog .ui-dialog-buttonpane {
+    border: none;
+    text-align: center;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: none;
+}
+div.form-template {
+    display: none;
+}
+.ta-editor,
+*[id^=taTextElement] {
+    min-height: 200px !important;
+}
+div[id^=taTextElement] #insertion {
+    display: none;
+}
+.submitted-markup-header {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+#submitted-markup {
+    border: 1px solid #ccc;
+    min-height: 140px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+form[name='editorFrm'] .button-group {
+    padding-bottom: 1.5em;
+}
+form[name='editorFrm'] button.btn-submit {
+    padding: 4px 12px 3px; 
+    border: 1px solid transparent;
+}
+div[id^=taTextElement] section[itemscope]:hover {
+    background-color: #f9f9f9;
+}
+
