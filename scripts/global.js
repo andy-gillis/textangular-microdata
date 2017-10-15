@@ -13,6 +13,7 @@ function SubmitMarkup() {
         if (!$.inArray(tagName, ["br", "hr"])) $this.remove();
     });
 
+    $editor.find("#insertion").remove();
     $result.text($editor.html());
 }
 
